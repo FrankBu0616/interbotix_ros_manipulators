@@ -21,6 +21,18 @@
     <texture filename="package://interbotix_xsarm_descriptions/meshes/interbotix_black.png"/>
   </material>
 
+  <material name="dark_blue">
+    <color rgba="0.2 0.3 0.36 1"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0.11 0.36 0.53 1"/>
+  </material>
+
+  <material name="green">
+    <color rgba="0.33 0.67 0.47 1"/>
+  </material>
+
   <xacro:if value="$(arg use_world_frame)">
     <link name="world"/>
     <joint name="fixed" type="fixed">
@@ -35,7 +47,7 @@
       <geometry>
         <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_1_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="interbotix_black"/>
+      <material name="dark_blue"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
@@ -75,7 +87,7 @@
       <geometry>
         <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_2_shoulder.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="interbotix_black"/>
+      <material name="green"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 -0.003"/>
@@ -115,7 +127,7 @@
       <geometry>
         <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_3_upper_arm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="interbotix_black"/>
+      <material name="dark_blue"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
@@ -155,7 +167,7 @@
       <geometry>
         <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_4_upper_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="interbotix_black"/>
+      <material name="green"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -195,7 +207,7 @@
       <geometry>
         <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_5_lower_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="interbotix_black"/>
+      <material name="dark_blue"/>
     </visual>
     <collision>
       <origin rpy="${pi} 0 0" xyz="0 0 0"/>
@@ -235,7 +247,7 @@
       <geometry>
         <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_6_wrist.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="interbotix_black"/>
+      <material name="green"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
@@ -275,7 +287,7 @@
       <geometry>
         <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_7_gripper.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="interbotix_black"/>
+      <material name="dark_blue"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="-0.02 0 0"/>
@@ -329,7 +341,7 @@
       <geometry>
         <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_8_gripper_prop.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="interbotix_black"/>
+      <material name="green"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="-0.0685 0 0"/>
@@ -361,7 +373,7 @@
         <geometry>
           <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_11_ar_tag.stl" scale="0.001 0.001 0.001"/>
         </geometry>
-        <material name="interbotix_black"/>
+        <material name="dark_blue"/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -395,7 +407,7 @@
         <geometry>
           <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_9_gripper_bar.stl" scale="0.001 0.001 0.001"/>
         </geometry>
-        <material name="interbotix_black"/>
+        <material name="green"/>
       </visual>
       <collision>
         <origin rpy="0 0 ${pi/2}" xyz="-0.063 0 0"/>
@@ -453,7 +465,7 @@
           <geometry>
             <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
           </geometry>
-          <material name="interbotix_black"/>
+          <material name="dark_blue"/>
         </visual>
         <collision>
           <origin rpy="${pi} ${pi} 0" xyz="0 0.005 0"/>
@@ -496,7 +508,7 @@
           <geometry>
             <mesh filename="package://interbotix_xsarm_descriptions/meshes/wx250s_meshes/wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
           </geometry>
-          <material name="interbotix_black"/>
+          <material name="dark_blue"/>
         </visual>
         <collision>
           <origin rpy="0 ${pi} 0" xyz="0 -0.005 0"/>
